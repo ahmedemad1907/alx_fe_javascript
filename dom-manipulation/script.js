@@ -4,7 +4,7 @@ const quotes = [
   { text: "If life were predictable it would cease to be life, and be without flavor.", category: "Philosophy" },
 ];
 
-function showRandomQuote() {
+function displayRandomQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const quote = quotes[randomIndex];
   document.getElementById("quoteDisplay").innerText = `"${quote.text}" — ${quote.category}`;
@@ -24,10 +24,10 @@ function addQuote() {
     textInput.value = "";
     categoryInput.value = "";
     alert("Quote added!");
+    displayRandomQuote();
   } else {
     alert("Please fill both fields.");
   }
 }
 
-document.getElementById("newQuote").addEventListener("click", showRandomQuote);
-
+document.getElementById("newQuote").addEventListener("click", displayRandomQuote);
