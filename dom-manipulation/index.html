@@ -14,7 +14,7 @@
     <option value="all">All Categories</option>
   </select>
 
-  <!-- Display Area -->
+  <!-- Display Quote -->
   <div id="quoteDisplay"></div>
   <button id="newQuote">Show New Quote</button>
 
@@ -25,15 +25,18 @@
     <button id="addQuoteBtn">Add Quote</button>
   </div>
 
-  <!-- Import/Export -->
+  <!-- JSON Import/Export -->
   <hr />
   <div>
     <button id="exportBtn">Export Quotes (JSON)</button>
     <input type="file" id="importFile" accept=".json" />
   </div>
 
-  <!-- Sync Notification -->
+  <!-- Sync Notifications -->
   <p id="syncNotice" style="color: green;"></p>
+
+  <!-- Manual Sync Button -->
+  <button onclick="manualConflictResolve()">Manually Sync with Server</button>
 
   <script src="script.js"></script>
 </body>
