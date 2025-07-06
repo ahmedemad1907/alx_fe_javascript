@@ -14,22 +14,26 @@
     <option value="all">All Categories</option>
   </select>
 
+  <!-- Display Area -->
   <div id="quoteDisplay"></div>
   <button id="newQuote">Show New Quote</button>
 
+  <!-- Add New Quote -->
   <div>
     <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
     <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
     <button id="addQuoteBtn">Add Quote</button>
   </div>
 
+  <!-- Import/Export -->
   <hr />
-
-  <!-- Import and Export Controls -->
   <div>
     <button id="exportBtn">Export Quotes (JSON)</button>
     <input type="file" id="importFile" accept=".json" />
   </div>
+
+  <!-- Sync Notification -->
+  <p id="syncNotice" style="color: green;"></p>
 
   <script src="script.js"></script>
 </body>
