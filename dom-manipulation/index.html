@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dynamic Quote Generator</title>
 </head>
 <body>
   <h1>Dynamic Quote Generator</h1>
 
-  <!-- Display Area -->
   <div id="quoteDisplay"></div>
   <button id="newQuote">Show New Quote</button>
 
-  <!-- Add Quote Form will be inserted by JS -->
-  <div id="formContainer"></div>
+  <!-- Add Quote -->
+  <div>
+    <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
+    <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
+    <button id="addQuoteBtn">Add Quote</button>
+  </div>
+
+  <!-- Sync Controls -->
+  <div style="margin-top: 20px;">
+    <button onclick="syncQuotes()">Sync Now</button>
+    <p id="syncNotice" style="color: green;"></p>
+  </div>
 
   <script src="script.js"></script>
 </body>
