@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import SearchBar from './components/SearchBar';
 import RecipeList from './components/RecipeList';
-import { useRecipeStore } from './store/recipeStore';
+import { useRecipeStore } from './components/recipeStore';
 
 function App() {
   const filterRecipes = useRecipeStore((state) => state.filterRecipes);
